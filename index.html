@@ -39,30 +39,46 @@
             <p>Accompagnement dans le développement web, assistance informatique, formations personnalisées et conseils en trading : je vous accompagne à chaque étape de vos projets.</p>
         </section>
         <section class="testimonials">
-            <h2>Ils m'ont fait confiance</h2>
-            <div class="testimonial-carousel-canvas">
-                <div class="testimonial-carousel" id="testimonial-carousel">
-                    <div class="testimonial-carousel-canvas">
-                        <div class="testimonial" data-index="0">
-                            <p>« Très satisfait de la création de mon site web, travail rapide et professionnel ! »</p>
-                            <span>- Client PME locale</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-carousel-canvas" style="display:none;">
-                        <div class="testimonial" data-index="1">
-                            <p>« Formation claire et adaptée, j’ai pu progresser rapidement en informatique. »</p>
-                            <span>- Apprenant</span>
-                        </div>
-                    </div>
-                    <div class="testimonial-carousel-canvas" style="display:none;">
-                        <div class="testimonial" data-index="2">
-                            <p>« Merci pour l’accompagnement en trading, j’ai gagné en confiance et en autonomie. »</p>
-                            <span>- Trader débutant</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <h2>Ils m'ont fait confiance</h2>
+    <div class="testimonial-carousel-canvas">
+        <div class="testimonial-carousel" id="testimonial-carousel">
+            <!-- Les témoignages seront injectés ici -->
+        </div>
+    </div>
+</section>
+
+<section class="submit-testimonial">
+  <h2>Laisser un témoignage</h2>
+  <a href="https://docs.google.com/forms/d/1T4zqyucb2Xns9xwLs5-W65fH-ZVpAEV86YaKWVUqDEQ/viewform" target="_blank" class="btn" style="display:inline-block;padding:0.75em 1.5em;background:#21a0a0;color:#fff;border-radius:5px;text-decoration:none;font-weight:bold;">Remplir le formulaire</a>
+  <p style="margin-top:1em;color:#555;font-size:0.95em;">Votre témoignage sera publié automatiquement sur le site après validation.</p>
+</section>
+<script>
+function loadTestimonialsFromSheet() {
+  const url = "https://docs.google.com/spreadsheets/d/1f9m_-gZf2vpvmiv_JDIBUnycMyrzPG8DqjIrWJLFVrw/gviz/tq?tqx=out:json";
+  fetch(url)
+    .then(response => response.text())
+    .then(text => {
+      // Supprimer le préfixe Google
+      const json = JSON.parse(text.substr(47).slice(0, -2));
+      const rows = json.table.rows;
+      const testimonials = rows.map(row => ({
+        author: row.c[3] ? row.c[3].v : "",
+        message: row.c[2] ? row.c[2].v : ""
+      }));
+      // Affiche les témoignages
+      const carousel = document.getElementById('testimonial-carousel');
+      carousel.innerHTML = '';
+      testimonials.forEach((item, idx) => {
+        const div = document.createElement('div');
+        div.className = 'testimonial-carousel-canvas';
+        if(idx !== 0) div.style.display = 'none';
+        div.innerHTML = `<div class=\"testimonial\" data-index=\"${idx}\">\n          <p>« ${item.message} »</p>\n          <span>- ${item.author}</span>\n        </div>`;
+        carousel.appendChild(div);
+      });
+    });
+}
+window.addEventListener('DOMContentLoaded', loadTestimonialsFromSheet);
+</script>
     </main>
     <footer>
     <div class="footer-links">
