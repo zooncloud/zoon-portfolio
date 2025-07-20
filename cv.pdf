@@ -1,0 +1,60 @@
+%PDF-1.4
+%����
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 343 >>
+stream
+BT
+/F1 24 Tf
+70 800 Td
+(CURRICULUM VITAE) Tj
+/F1 14 Tf
+70 770 Td
+(Nom : [Ton nom ici]) Tj
+70 750 Td
+(Metiers : Developpeur Web, Trader, Formateur, Maintenance Informatique) Tj
+70 730 Td
+(Competences :) Tj
+/F1 12 Tf
+90 710 Td
+(- Developpement web (HTML, CSS, JavaScript)) Tj
+90 695 Td
+(- Trading & analyse des marches) Tj
+90 680 Td
+(- Decodage de smartphones) Tj
+90 665 Td
+(- Formation (anglais, informatique, trading)) Tj
+90 650 Td
+(- Maintenance informatique) Tj
+90 635 Td
+(- Assistance informatique) Tj
+/F1 14 Tf
+70 610 Td
+(Contact : [Ton email ici]) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000062 00000 n 
+0000000111 00000 n 
+0000000250 00000 n 
+0000000642 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+719
+%%EOF
