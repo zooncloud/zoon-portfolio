@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle class="logo-anim-circle" cx="30" cy="30" r="28" stroke="#1a2238" stroke-width="4" fill="#1a2238"/>
+    <rect x="18" y="25" width="24" height="10" rx="5" fill="#21a0a0"/>
+    <polyline class="logo-anim-stroke" points="22,35 30,15 38,35" fill="none" stroke="#fff" stroke-width="2"/>
+    <line class="logo-anim-stroke" x1="30" y1="15" x2="30" y2="45" stroke="#fff" stroke-width="2"/>
+</svg>
+            <span class="logo-text">Web & Trading</span>
+        </div>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="main-nav">
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="skills.html">Compétences</a>
+            <a href="services.html">Services</a>
+            <a href="projets.html">Réalisations</a>
+            <a href="contact.html">Contact</a>
+            <a href="mentions.html">Mentions légales</a>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <h2>À propos</h2>
+            <div class="about-content">
+                <div class="about-photo">
+                    <!-- Remplace l'image par ta photo si souhaité -->
+                    <img src="zoon.png" alt="Photo professionnelle" style="width:120px;height:120px;border-radius:50%;object-fit:cover;background:#eaeaea;">
+                </div>
+                <div class="zoonetique-name">zoonetique</div>
+                <div class="about-text">
+                    <p>Développeur web, formateur et trader passionné, j’ai à cœur d’accompagner mes clients dans la réussite de leurs projets numériques et financiers. Mon parcours m’a permis d’acquérir une expertise solide en informatique, en pédagogie et en analyse des marchés. Je crois en l’écoute, la réactivité et la transmission du savoir pour bâtir une relation de confiance durable avec chaque client.</p>
+                    <ul class="about-values">
+                        <li><strong>Valeurs :</strong> professionnalisme, pédagogie, adaptabilité, confidentialité.</li>
+                        <li><strong>Vision :</strong> rendre la technologie et la finance accessibles à tous, avec simplicité et efficacité.</li>
+                    </ul>
+                    <div class="about-links">
+    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.76 1.37-1.56 2.82-1.56 3.02 0 3.58 1.99 3.58 4.58v4.75z"/></svg>
+        LinkedIn
+    </a> |
+    <a href="https://github.com" target="_blank" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 0.297c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387 0.6 0.113 0.82-0.258 0.82-0.577 0-0.285-0.01-1.04-0.015-2.04-3.338 0.724-4.042-1.614-4.042-1.614-0.546-1.387-1.333-1.756-1.333-1.756-1.089-0.745 0.083-0.729 0.083-0.729 1.205 0.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495 0.997 0.108-0.775 0.418-1.305 0.762-1.605-2.665-0.305-5.466-1.334-5.466-5.931 0-1.311 0.469-2.381 1.236-3.221-0.124-0.303-0.535-1.523 0.117-3.176 0 0 1.008-0.322 3.301 1.23 0.957-0.266 1.983-0.399 3.003-0.404 1.02 0.005 2.047 0.138 3.006 0.404 2.291-1.553 3.297-1.23 3.297-1.23 0.653 1.653 0.242 2.873 0.119 3.176 0.77 0.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921 0.43 0.372 0.823 1.104 0.823 2.222 0 1.606-0.014 2.898-0.014 3.293 0 0.322 0.216 0.694 0.825 0.576 4.765-1.589 8.199-6.085 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+    </a>
+</div>
+<a href="cv.pdf" class="cv-btn" download aria-label="Télécharger mon CV">
+    <svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.83.48-5.48-1.02-6.36-3.68-.2-.64.24-1.31.93-1.31.41 0 .77.25.91.62.59 1.45 2.11 2.24 3.52 1.65 1.45-.59 2.24-2.11 1.65-3.52-.59-1.45-2.11-2.24-3.52-1.65-.41.17-.87-.07-1.04-.48-.17-.41.07-.87.48-1.04 2.09-.85 4.5.21 5.35 2.3.85 2.09-.21 4.5-2.3 5.35z"/></svg>
+    Télécharger mon CV
+</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="footer-links">
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.76 1.37-1.56 2.82-1.56 3.02 0 3.58 1.99 3.58 4.58v4.75z"/></svg>
+        LinkedIn
+    </a> |
+    <a href="https://github.com" target="_blank" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 0.297c-6.627 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387 0.6 0.113 0.82-0.258 0.82-0.577 0-0.285-0.01-1.04-0.015-2.04-3.338 0.724-4.042-1.614-4.042-1.614-0.546-1.387-1.333-1.756-1.333-1.756-1.089-0.745 0.083-0.729 0.083-0.729 1.205 0.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495 0.997 0.108-0.775 0.418-1.305 0.762-1.605-2.665-0.305-5.466-1.334-5.466-5.931 0-1.311 0.469-2.381 1.236-3.221-0.124-0.303-0.535-1.523 0.117-3.176 0 0 1.008-0.322 3.301 1.23 0.957-0.266 1.983-0.399 3.003-0.404 1.02 0.005 2.047 0.138 3.006 0.404 2.291-1.553 3.297-1.23 3.297-1.23 0.653 1.653 0.242 2.873 0.119 3.176 0.77 0.84 1.235 1.91 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921 0.43 0.372 0.823 1.104 0.823 2.222 0 1.606-0.014 2.898-0.014 3.293 0 0.322 0.216 0.694 0.825 0.576 4.765-1.589 8.199-6.085 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+    </a> |
+    <a href="cv.pdf" download aria-label="Télécharger mon CV">
+        <svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-2.83.48-5.48-1.02-6.36-3.68-.2-.64.24-1.31.93-1.31.41 0 .77.25.91.62.59 1.45 2.11 2.24 3.52 1.65 1.45-.59 2.24-2.11 1.65-3.52-.59-1.45-2.11-2.24-3.52-1.65-.41.17-.87-.07-1.04-.48-.17-.41.07-.87.48-1.04 2.09-.85 4.5.21 5.35 2.3.85 2.09-.21 4.5-2.3 5.35z"/></svg>
+        Télécharger mon CV
+    </a>
+    </div>
+    <p>&copy; 2025 | Portfolio - Développeur Web & Trader</p>
+</footer>
+<script src="menu.js"></script>
+</body>
+</html>
